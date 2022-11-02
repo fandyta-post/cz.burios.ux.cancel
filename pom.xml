@@ -16,7 +16,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>11</java.version>
 		<spring.version>5.3.23</spring.version>
-		<jersey.version>2.26</jersey.version>
+		<jersey.version>2.37</jersey.version>
 	</properties>
 
 	<dependencies>
