@@ -1,0 +1,15 @@
+Předělat Jazyky, Země a Slovník do DB  
+-------------------------------------------------------------------------------
+
+
+Do authentikace doplnit test na DEBUG
+
+
+-------------------------------------------------------------------------------
+testovací účty Google:
+
+buriosca@gmail.com			| mcouscz68
+fandyta.1129@gmail.com		| fanDyCz68
+dytrychovajitka@gmail.com	| mcous_Cz68
+turki.mary.1873@gmail.com	| Tur.Mar.1873
+wencabur@gmail.com			| mcouscz68

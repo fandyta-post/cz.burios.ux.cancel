@@ -1,0 +1,9 @@
+[{ 
+	"id": "default-light", "title": "Default Light" 
+}, { 
+	"id": "default-dark", "title": "Default Dark" 
+},{
+	"id": "classic-light", "title": "Classic Light"
+},{
+	"id": "classic-dark", "title": "Classic Dark" 	 
+}]
