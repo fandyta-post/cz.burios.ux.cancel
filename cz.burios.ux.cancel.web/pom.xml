@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>cz.burios.ux.cancel</groupId>
 		<artifactId>cz.burios.ux.cancel</artifactId>
-		<version>22.1-SNAPSHOT</version>
+		<version>23.2-SNAPSHOT</version>
 	</parent>
 	<artifactId>cz.burios.ux.cancel.web</artifactId>
 	<packaging>war</packaging>
@@ -40,23 +40,23 @@
 		<dependency>
 			<groupId>cz.burios.ux</groupId>
 			<artifactId>cz.burios.ux.core</artifactId>
-			<version>22.1-SNAPSHOT</version>
+			<version>23.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>cz.burios.ux</groupId>
 			<artifactId>cz.burios.ux.desktop</artifactId>
-			<version>22.1-SNAPSHOT</version>
+			<version>23.2-SNAPSHOT</version>
 			<type>war</type>
 		</dependency>
 		<dependency>
 			<groupId>cz.burios.ux</groupId>
 			<artifactId>cz.burios.ux.uniql</artifactId>
-			<version>22.1-SNAPSHOT</version>
+			<version>23.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>cz.burios.ux.cancel</groupId>
 			<artifactId>cz.burios.ux.cancel.bank</artifactId>
-			<version>22.1-SNAPSHOT</version>
+			<version>23.2-SNAPSHOT</version>
 		</dependency>
 	
 		<!-- Google API -->

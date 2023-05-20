@@ -14,5 +14,7 @@ public class ApplicationDefineConfig extends AbstractApplicationDefineConfig {
 		path = "cancel";
 		name = "Cancel";
 		title = "Buriosca.cz - Cancel";
+		
+		options.put("autheticable", Boolean.TRUE);
 	}	
 }
