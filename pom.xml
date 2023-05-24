@@ -14,18 +14,13 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>11</java.version>
-		<spring.version>5.3.23</spring.version>
-		<jersey.version>2.37</jersey.version>
+		<java.version>17</java.version>
+		<spring.version>6.0.3</spring.version>
+		<spring-security.version>6.0.1</spring-security.version>
+		<jersey.version>3.0.1</jersey.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.0</version>
-			<scope>provided</scope>
-		</dependency>	
 		<dependency>
 			<groupId>cz.burios.ux</groupId>
 			<artifactId>cz.burios.ux.core</artifactId>
@@ -46,6 +41,35 @@
 			<groupId>cz.burios.ux</groupId>
 			<artifactId>cz.burios.ux.rest</artifactId>
 			<version>23.2-SNAPSHOT</version>
+		</dependency>
+
+		<!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring-security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring-security.version}</version>
+		</dependency>
+		<!-- 
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-oauth2-client</artifactId>
+		    <version>${spring-security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-oauth2-jose</artifactId>
+			<version>${spring-security.version}</version>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
 		</dependency>
 
 	</dependencies>
