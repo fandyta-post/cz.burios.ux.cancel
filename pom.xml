@@ -65,7 +65,7 @@
 	</build>
 
 	<modules>
-		<module>cz.burios.ux.cancel.web</module>
+		<module>cz.burios.ux.cancel.desktop</module>
 		<module>cz.burios.ux.cancel.bank</module>
 	</modules>
 </project>

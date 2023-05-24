@@ -9,7 +9,7 @@
 		<artifactId>cz.burios.ux.cancel</artifactId>
 		<version>23.2-SNAPSHOT</version>
 	</parent>
-	<artifactId>cz.burios.ux.cancel.web</artifactId>
+	<artifactId>cz.burios.ux.cancel.desktop</artifactId>
 	<packaging>war</packaging>
 
 	<dependencies>
