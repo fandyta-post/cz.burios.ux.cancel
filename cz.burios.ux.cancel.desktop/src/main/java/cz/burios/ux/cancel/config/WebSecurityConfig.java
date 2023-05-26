@@ -48,7 +48,7 @@ public class WebSecurityConfig {
 			.loginPage("/auth/login")
 				.usernameParameter("userName")
 				.passwordParameter("userPassword")
-			.loginProcessingUrl("/j_spring_security_check")
+			.loginProcessingUrl("/login-processing")
 			.defaultSuccessUrl("/p/desktop")
 			.failureUrl("/auth/login?error")
 	    ;		
