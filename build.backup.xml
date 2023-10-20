@@ -1,0 +1,25 @@
+<project name="cz.burios.ux.cancel" basedir="." default="archive.src">
+
+	<property name="project.home" value="${basedir}" />
+	<property name="archive.home" value="${user.home}\OneDrive\java\projects\github\fandyta\post" />
+	<property name="project.root.dir" value="${project.home}" />
+	<property name="project.name" value="cz.burios.ux.cancel" />
+	
+	<!-- Check timestamp on files -->
+	<target name="prepare">
+		<tstamp>
+			<format property="date" pattern="yyyyMMddHHmm" />
+		</tstamp>
+	</target>
+
+	<target name="archive.src" depends="prepare" description="Archivate source files">
+		<zip destfile="${archive.home}/${project.name}-23.1-${date}.zip" basedir="${project.home}">
+			<!--  -->
+			<exclude name="**/.project" />
+			<exclude name="**/.classpath" />
+			<exclude name="**/.git/**" />
+			<exclude name="**/.settings/**" />
+			<exclude name="**/target/**" />
+		</zip>
+	</target>
+</project>
