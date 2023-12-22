@@ -4,25 +4,16 @@ import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.time.LocalDateTime;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.commons.collections4.MultiValuedMap;
-import org.apache.commons.collections4.map.MultiValueMap;
-import org.apache.commons.collections4.multimap.ArrayListValuedHashMap;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.commons.lang3.time.DateUtils;
 
 import cz.burios.ux.cancel.bank.model.BankAccount;
 import cz.burios.ux.cancel.bank.model.BankTransaction;
-import cz.burios.ux.cancel.bank.model.IBankAccount;
 import cz.burios.ux.cancel.bank.model.IBankTransaction;
 import cz.burios.ux.core.model.UserAccount;
 import cz.burios.ux.uniql.DBContext;

@@ -2,18 +2,8 @@ package cz.burios.ux.cancel.config.db;
 
 import java.sql.Connection;
 import java.util.List;
-import java.util.Set;
 
-import javax.persistence.Table;
-
-import org.reflections.Reflections;
-
-import cz.burios.uniql.metadata.FieldMetaData;
 import cz.burios.uniql.metadata.TableMetaData;
-import cz.burios.uniql.sql.Operator;
-import cz.burios.uniql.jpa.mapping.ColumnMapping;
-import cz.burios.uniql.jpa.mapping.JPAORMapping;
-import cz.burios.uniql.jpa.mapping.ORMapping;
 import cz.burios.uniql.jpa.utils.JpaMetadataHelper;
 import cz.burios.ux.uniql.config.db.DBUpadaterAsbtract;
 import cz.burios.ux.uniql.config.db.DBUpdatable;
