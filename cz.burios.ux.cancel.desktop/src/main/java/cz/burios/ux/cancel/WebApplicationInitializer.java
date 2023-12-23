@@ -12,7 +12,7 @@ import cz.burios.ux.cancel.config.WebSecurityConfig;
 import cz.burios.ux.cancel.config.db.DBUpdarerConfig;
 import cz.burios.ux.uniql.DBContextConfig;
 
-public class WebApplicationIntializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class WebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -55,7 +55,7 @@ public class WebApplicationIntializer extends AbstractAnnotationConfigDispatcher
 	/*
 	@Override
 	protected FrameworkServlet createDispatcherServlet(WebApplicationContext wac) {
-		// System.out.println("WebApplicationIntializer.createDispatcherServlet()");
+		// System.out.println("WebApplicationInitializer.createDispatcherServlet()");
 		DispatcherServlet ds = new DispatcherServlet(wac);
 		ds.setDetectAllHandlerExceptionResolvers(false);
 		return ds;
