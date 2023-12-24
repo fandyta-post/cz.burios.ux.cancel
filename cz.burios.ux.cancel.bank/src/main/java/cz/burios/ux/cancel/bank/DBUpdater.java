@@ -35,4 +35,9 @@ public class DBUpdater extends DBUpadaterAsbtract {
 		}
 	}
 
+	@Override
+	public String getDatabaseName() {
+		return "cancel";
+	}
+
 }

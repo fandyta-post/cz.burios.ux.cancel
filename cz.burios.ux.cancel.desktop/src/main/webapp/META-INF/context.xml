@@ -2,10 +2,10 @@
 <Context>
 	<!--
 	<Resource name="BeanManager" auth="Container" type="javax.enterprise.inject.spi.BeanManager" factory="org.jboss.weld.resources.ManagerObjectFactory"/>
-	<Resource name="dbUpdateManager" auth="Container" type="java.lang.Object" factory="cz.burios.ux.cancel.config.db.DBUpdater"/>
+	<Resource name="dbUpdateManager" auth="Container" type="java.lang.Object" factory="cz.burios.ux.cancel.db.DBUpdater"/>
 	<Parameter name="companyName" value="Buriosca Software" override="false"/>
 	-->		
-	<Parameter name="dbUpdaterClass" value="cz.burios.ux.cancel.config.db.DBUpdater" override="false"/>
+	<Parameter name="dbUpdaterClass" value="cz.burios.ux.cancel.db.DBUpdater" override="false"/>
 	<Resource name="DBDataSource"
 		auth="Container"
 		type="javax.sql.DataSource"

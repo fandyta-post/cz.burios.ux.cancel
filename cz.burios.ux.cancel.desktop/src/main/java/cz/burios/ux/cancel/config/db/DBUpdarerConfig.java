@@ -3,6 +3,7 @@ package cz.burios.ux.cancel.config.db;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import cz.burios.ux.cancel.db.DBUpdater;
 import cz.burios.ux.uniql.config.db.DBUpadaterAsbtract;
 
 @Configuration

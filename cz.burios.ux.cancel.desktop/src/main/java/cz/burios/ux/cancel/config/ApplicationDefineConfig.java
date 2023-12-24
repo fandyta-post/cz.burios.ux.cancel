@@ -16,5 +16,6 @@ public class ApplicationDefineConfig extends AbstractApplicationDefineConfig {
 		title = "Buriosca.cz - Cancel";
 		
 		options.put("autheticable", Boolean.TRUE);
+		options.put("oauth2_autheticable", Boolean.TRUE);
 	}	
 }

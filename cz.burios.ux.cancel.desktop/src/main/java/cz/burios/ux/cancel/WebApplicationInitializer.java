@@ -6,10 +6,10 @@ import org.springframework.web.servlet.FrameworkServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import cz.burios.ux.cancel.config.ApplicationDefineConfig;
-import cz.burios.ux.cancel.config.DBConfig;
 import cz.burios.ux.cancel.config.WebMvcConfig;
 import cz.burios.ux.cancel.config.WebSecurityConfig;
 import cz.burios.ux.cancel.config.db.DBUpdarerConfig;
+import cz.burios.ux.security.config.DBConfig;
 import cz.burios.ux.uniql.DBContextConfig;
 
 public class WebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -17,17 +17,12 @@ public class WebApplicationInitializer extends AbstractAnnotationConfigDispatche
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		return new Class[] {
-			/*
 			ApplicationDefineConfig.class,
-			WebSecurityConfig.class,
-			// JerseyResourceConfig.class
-			*/
-			ApplicationDefineConfig.class,
-			DBContextConfig.class, 
-			DBUpdarerConfig.class,
 			DBConfig.class,
 			WebSecurityConfig.class,
-			WebMvcConfig.class, 			
+			WebMvcConfig.class, 
+			/*
+			 */
 		};
 	}
 
