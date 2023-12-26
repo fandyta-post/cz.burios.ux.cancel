@@ -40,4 +40,9 @@ public class DBUpdater extends DBUpadaterAsbtract {
 		return "cancel";
 	}
 
+	@Override
+	public String getReflectionsPackage() {
+		return "cz.burios.ux";
+	}
+
 }

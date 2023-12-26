@@ -55,6 +55,7 @@ public class DBUpdater extends DBUpadaterAsbtract {
 		System.out.println("DBUpdater.updateData( END )");
 	}
 
+	/*
 	protected void syncMetaData() throws Exception {
 		System.out.println("DBUpdater.syncMetaData()");
 		try (Connection conn = this.ds().getConnection()) {
@@ -109,9 +110,15 @@ public class DBUpdater extends DBUpadaterAsbtract {
 			e.printStackTrace();
 		}
 	}
-
+	*/
 	@Override
 	public String getDatabaseName() {
 		return "cancel";
 	}
+	
+	@Override
+	public String getReflectionsPackage() {
+		return "cz.burios.ux";
+	}
+
 }
