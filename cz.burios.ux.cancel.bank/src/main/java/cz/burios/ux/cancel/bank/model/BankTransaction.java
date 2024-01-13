@@ -16,7 +16,7 @@ import javax.persistence.Lob;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import cz.burios.ux.core.model.DefaultModulRecord;
+import cz.burios.ux.core.model.ModulRecord;
 
 @SuppressWarnings("serial")
 @Entity(name = "bank_transaction")
@@ -29,7 +29,7 @@ import cz.burios.ux.core.model.DefaultModulRecord;
 			@Index(name = "bank_transaction_SPECIFIC_SYMBOL_idx", columnList = "SPECIFIC_SYMBOL")
 	}
 )
-public class BankTransaction extends DefaultModulRecord implements IBankTransaction {
+public class BankTransaction extends ModulRecord implements IBankTransaction {
 
 	/*
 	CREATE TABLE `bank_transaction` (

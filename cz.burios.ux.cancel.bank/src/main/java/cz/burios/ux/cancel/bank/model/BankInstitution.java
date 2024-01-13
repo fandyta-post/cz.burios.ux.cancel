@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Index;
 import javax.persistence.Table;
 
-import cz.burios.ux.core.model.DefaultModulRecord;
+import cz.burios.ux.core.model.ModulRecord;
 
 @SuppressWarnings("serial")
 @Table(name = "bank_institution", 
@@ -14,7 +14,7 @@ indexes = {
 	@Index(name = "bank_institution_BIC_idx", columnList = "BIC"),
 	@Index(name = "bank_institution_NAME_idx", columnList = "NAME")
 })
-public class BankInstitution extends DefaultModulRecord {
+public class BankInstitution extends ModulRecord {
 
 	/*
 	CREATE TABLE `bank_institution` (

@@ -8,7 +8,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import cz.burios.ux.core.model.DefaultModulRecord;
+import cz.burios.ux.core.model.ModulRecord;
 
 @SuppressWarnings("serial")
 @Entity(name = "bank_account")
@@ -24,7 +24,7 @@ import cz.burios.ux.core.model.DefaultModulRecord;
 		@Index(name = "bank_account_BANK_ID_idx", columnList = "BANK_ID")
 	}
 )
-public class BankAccount extends DefaultModulRecord implements IBankAccount {
+public class BankAccount extends ModulRecord implements IBankAccount {
 	
 	@Column(name = "NAME", length = 100, nullable = false)
 	private String name = "";

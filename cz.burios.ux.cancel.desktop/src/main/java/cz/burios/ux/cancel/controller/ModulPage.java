@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import cz.burios.ux.core.model.Modul;
+import cz.burios.ux.core.model.ModulDefine;
 import cz.burios.ux.core.model.UserContext;
 
 @Controller
@@ -28,7 +28,7 @@ public class ModulPage {
 		actions.put("212_900_TREEVIEW", "api/devel/js/treeview");
 	}
 	
-	List<Modul> modules = null;
+	List<ModulDefine> modules = null;
 	
 	@Autowired 
 	private UserContext user;
@@ -44,13 +44,13 @@ public class ModulPage {
 		return view;
 	}
 	
-	protected List<Modul> getModules() {
+	protected List<ModulDefine> getModules() {
 		if (modules == null) {
 			modules = new ArrayList<>();
-			modules.addAll(Arrays.asList(new Modul[] {
-				new Modul("0000_212900_ACCORDION", "", "", "api/devel/js/accordion", ""),
-				new Modul("212_900_SLIDEMENU", "", "", "api/devel/js/slidemenu", ""),
-				new Modul("212_900_TREEVIEW", "", "", "api/devel/js/treeview", ""),
+			modules.addAll(Arrays.asList(new ModulDefine[] {
+				new ModulDefine("0000_212900_ACCORDION", "", "", "api/devel/js/accordion", ""),
+				new ModulDefine("212_900_SLIDEMENU", "", "", "api/devel/js/slidemenu", ""),
+				new ModulDefine("212_900_TREEVIEW", "", "", "api/devel/js/treeview", ""),
 			}));
 		}
 		return modules;
