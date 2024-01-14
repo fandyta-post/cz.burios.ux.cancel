@@ -48,9 +48,9 @@ public class ModulPage {
 		if (modules == null) {
 			modules = new ArrayList<>();
 			modules.addAll(Arrays.asList(new ModulDefine[] {
-				new ModulDefine("0000_212900_ACCORDION", "", "", "api/devel/js/accordion", ""),
-				new ModulDefine("212_900_SLIDEMENU", "", "", "api/devel/js/slidemenu", ""),
-				new ModulDefine("212_900_TREEVIEW", "", "", "api/devel/js/treeview", ""),
+				new ModulDefine("0000_212900_ACCORDION", "", "", "api/devel/js/accordion", "", ""),
+				new ModulDefine("212_900_SLIDEMENU", "", "", "api/devel/js/slidemenu", "", ""),
+				new ModulDefine("212_900_TREEVIEW", "", "", "api/devel/js/treeview", "", ""),
 			}));
 		}
 		return modules;
